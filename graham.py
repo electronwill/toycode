@@ -67,9 +67,9 @@ def hyperoperation_fast(a,b,n):
 def h(a,b,n): return hyperoperation_fast(a,b,n)
 
 def g(): #Graham's number; it is not feasible to execute this code
-    g = 6
+    g = 4
     for _ in range(64):
-        g = h(3,3,g)
+        g = h(3,3,g+2)
     return g
 
 def test(f):
